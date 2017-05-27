@@ -52,7 +52,7 @@ func vaterpaz() {
 	fmt.Println(result.Bag - result.Items)
 
 	if result.Bag-result.Items < 5 {
-		fmt.Println("Rich hero!") //здесь воткнем вызов бота для нотификции
+		//fmt.Println("Rich hero!")
 		achtung()
 
 	}
