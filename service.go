@@ -25,7 +25,6 @@ func (m *myservice) Execute(args []string, r <-chan svc.ChangeRequest, changes c
 	changes <- svc.Status{State: svc.StartPending}
 
 	timeout, _, _, _, _ := config()
-	initfile()
 
 	fasttick := time.Tick(500 * time.Millisecond)
 
@@ -76,7 +75,7 @@ func runService(name string, isDebug bool) {
 
 	if isDebug {
 		elog = debug.New(name)
-		fmt.Println("EVE API v2 attacks notifier v 1.0")
+		fmt.Println("GodVille inventory checker")
 	} else {
 		elog, err = eventlog.Open(name)
 		if err != nil {
