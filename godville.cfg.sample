@@ -1,0 +1,6 @@
+[gv]
+timeout=300 # Checking loop in seconds 
+Godname= #Godville God Name
+Apikey= #Godville API key
+bot= #Telegram bot key
+userid= #Your telegram userid, you can obtain it running .exe with userid option
